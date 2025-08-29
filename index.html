@@ -20,6 +20,12 @@
     <div class="container mx-auto px-3 sm:px-4 py-4 sm:py-8 max-w-4xl">
         <!-- Header -->
         <div class="text-center mb-6 sm:mb-8">
+            <div class="flex justify-center mb-4">
+                <img src="https://raw.githubusercontent.com/mathnology/Penelitian-Relevan/refs/heads/main/gif%20mathnology.gif" 
+                     alt="Mathnology Logo" 
+                     class="h-15 sm:h-20 w-auto object-contain"
+                     onerror="this.style.display='none';">
+            </div>
             <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-indigo-800 mb-2 px-2">📚 Aplikasi Pembelajaran Pecahan</h1>
             <p class="text-sm sm:text-base text-gray-600 px-2">Pelajari operasi pecahan dengan mudah dan menyenangkan!</p>
         </div>
@@ -47,11 +53,24 @@
                 <div class="space-y-4 sm:space-y-6">
                     <!-- Pecahan Campuran -->
                     <div class="bg-blue-50 rounded-lg p-4 sm:p-6">
-                        <h3 class="text-lg sm:text-xl font-semibold text-blue-800 mb-3 sm:mb-4">1. Pecahan Campuran</h3>
+                        <h3 class="text-lg sm:text-xl font-semibold text-blue-800 mb-3 sm:mb-4">1. Pecahan Campuran dan Pecahan Biasa</h3>
                         <p class="text-sm sm:text-base text-gray-700 mb-3">Pecahan campuran adalah gabungan bilangan bulat dan pecahan biasa.</p>
-                        <div class="bg-white p-3 sm:p-4 rounded-lg border-l-4 border-blue-500">
-                            <p class="font-semibold text-sm sm:text-base">Contoh: $6\frac{2}{5}$ dibaca "enam dua per lima"</p>
-                            <p class="mt-2 text-sm sm:text-base">Untuk mengubah ke pecahan biasa: $6\frac{2}{5} = \frac{(6 \times 5) + 2}{5} = \frac{32}{5}$</p>
+                        
+                        <div class="space-y-3">
+                            <!-- Pecahan Campuran ke Pecahan Biasa -->
+                            <div class="bg-white p-3 sm:p-4 rounded-lg border-l-4 border-blue-500">
+                                <p class="font-semibold text-sm sm:text-base text-blue-700 mb-2">Mengubah Pecahan Campuran ke Pecahan Biasa:</p>
+                                <p class="text-sm sm:text-base">Rumus: $a\frac{b}{c} = \frac{(a \times c) + b}{c}$</p>
+                                <p class="mt-2 text-sm sm:text-base">Contoh: $6\frac{2}{5} = \frac{(6 \times 5) + 2}{5} = \frac{30 + 2}{5} = \frac{32}{5}$</p>
+                            </div>
+                            
+                            <!-- Pecahan Biasa ke Pecahan Campuran -->
+                            <div class="bg-white p-3 sm:p-4 rounded-lg border-l-4 border-green-500">
+                                <p class="font-semibold text-sm sm:text-base text-green-700 mb-2">Mengubah Pecahan Biasa ke Pecahan Campuran:</p>
+                                <p class="text-sm sm:text-base">Bagi pembilang dengan penyebut, hasil bagi = bilangan bulat, sisa = pembilang baru</p>
+                                <p class="mt-2 text-sm sm:text-base">Contoh: $\frac{17}{5} = 3\frac{2}{5}$ (karena $17 \div 5 = 3$ sisa $2$)</p>
+                                <p class="mt-1 text-sm sm:text-base">Contoh: $\frac{23}{7} = 3\frac{2}{7}$ (karena $23 \div 7 = 3$ sisa $2$)</p>
+                            </div>
                         </div>
                     </div>
 
@@ -75,9 +94,33 @@
                         </div>
                     </div>
 
+                    <!-- Penjumlahan Pecahan -->
+                    <div class="bg-orange-50 rounded-lg p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-orange-800 mb-3 sm:mb-4">4. Penjumlahan Pecahan</h3>
+                        <p class="text-sm sm:text-base text-gray-700 mb-3">Untuk menjumlahkan pecahan, samakan penyebut terlebih dahulu, lalu jumlahkan pembilangnya.</p>
+                        <div class="bg-white p-3 sm:p-4 rounded-lg border-l-4 border-orange-500">
+                            <p class="font-semibold text-sm sm:text-base">Penyebut sama: $\frac{a}{c} + \frac{b}{c} = \frac{a + b}{c}$</p>
+                            <p class="mt-2 text-sm sm:text-base">Contoh: $\frac{2}{7} + \frac{3}{7} = \frac{2 + 3}{7} = \frac{5}{7}$</p>
+                            <p class="mt-2 font-semibold text-sm sm:text-base">Penyebut beda: Cari KPK penyebut</p>
+                            <p class="mt-1 text-sm sm:text-base">Contoh: $\frac{1}{3} + \frac{1}{4} = \frac{4}{12} + \frac{3}{12} = \frac{7}{12}$</p>
+                        </div>
+                    </div>
+
+                    <!-- Pengurangan Pecahan -->
+                    <div class="bg-red-50 rounded-lg p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-red-800 mb-3 sm:mb-4">5. Pengurangan Pecahan</h3>
+                        <p class="text-sm sm:text-base text-gray-700 mb-3">Untuk mengurangkan pecahan, samakan penyebut terlebih dahulu, lalu kurangkan pembilangnya.</p>
+                        <div class="bg-white p-3 sm:p-4 rounded-lg border-l-4 border-red-500">
+                            <p class="font-semibold text-sm sm:text-base">Penyebut sama: $\frac{a}{c} - \frac{b}{c} = \frac{a - b}{c}$</p>
+                            <p class="mt-2 text-sm sm:text-base">Contoh: $\frac{5}{8} - \frac{3}{8} = \frac{5 - 3}{8} = \frac{2}{8} = \frac{1}{4}$</p>
+                            <p class="mt-2 font-semibold text-sm sm:text-base">Penyebut beda: Cari KPK penyebut</p>
+                            <p class="mt-1 text-sm sm:text-base">Contoh: $\frac{3}{4} - \frac{1}{6} = \frac{9}{12} - \frac{2}{12} = \frac{7}{12}$</p>
+                        </div>
+                    </div>
+
                     <!-- Urutan Operasi -->
                     <div class="bg-purple-50 rounded-lg p-4 sm:p-6">
-                        <h3 class="text-lg sm:text-xl font-semibold text-purple-800 mb-3 sm:mb-4">4. Urutan Operasi</h3>
+                        <h3 class="text-lg sm:text-xl font-semibold text-purple-800 mb-3 sm:mb-4">6. Urutan Operasi</h3>
                         <p class="text-sm sm:text-base text-gray-700 mb-3">Dalam operasi campuran, ikuti urutan: Kurung → Perkalian/Pembagian → Penjumlahan/Pengurangan</p>
                         <div class="bg-white p-3 sm:p-4 rounded-lg border-l-4 border-purple-500">
                             <p class="font-semibold text-sm sm:text-base">Ingat: KALI BAGI dulu, baru TAMBAH KURANG</p>
@@ -181,6 +224,12 @@
                         
                         <div id="quiz-result" class="hidden p-3 sm:p-4 rounded-lg mb-3 sm:mb-4"></div>
                         
+                        <!-- Pembahasan Latihan -->
+                        <div id="quiz-solution" class="hidden bg-blue-50 rounded-lg p-4 sm:p-6 mb-4">
+                            <h4 class="text-lg font-semibold text-blue-800 mb-3">📝 Pembahasan:</h4>
+                            <div id="solution-steps" class="space-y-2"></div>
+                        </div>
+                        
                         <div class="text-center space-y-2 sm:space-y-0 sm:space-x-3">
                             <button onclick="checkAnswer()" id="check-btn" class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 py-3 rounded-lg font-semibold transition-colors duration-300 disabled:bg-gray-400 text-sm sm:text-base" disabled>
                                 Periksa Jawaban
@@ -205,6 +254,11 @@
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="text-center py-6 mt-8 border-t border-gray-200 bg-white">
+        <p class="text-gray-600 text-sm">© 2025 Mathnology</p>
+    </footer>
+
     <script>
         let currentStep = 0;
         let selectedAnswer = '';
@@ -214,14 +268,32 @@
             {
                 question: "\\frac{3}{4} \\times 2\\frac{1}{3} + 1\\frac{2}{5} \\div \\frac{2}{5}",
                 options: ["4\\frac{3}{4}", "5\\frac{1}{4}", "5\\frac{3}{4}", "6\\frac{1}{4}"],
-                correct: "C",
-                solution: "5\\frac{3}{4}"
+                correct: "B",
+                solution: "5\\frac{1}{4}",
+                steps: [
+                    "Ubah pecahan campuran ke pecahan biasa:",
+                    "$2\\frac{1}{3} = \\frac{7}{3}$ dan $1\\frac{2}{5} = \\frac{7}{5}$",
+                    "Tulis ulang: $\\frac{3}{4} \\times \\frac{7}{3} + \\frac{7}{5} \\div \\frac{2}{5}$",
+                    "Hitung perkalian: $\\frac{3}{4} \\times \\frac{7}{3} = \\frac{21}{12} = \\frac{7}{4}$",
+                    "Hitung pembagian: $\\frac{7}{5} \\div \\frac{2}{5} = \\frac{7}{5} \\times \\frac{5}{2} = \\frac{7}{2}$",
+                    "Jumlahkan: $\\frac{7}{4} + \\frac{7}{2} = \\frac{7}{4} + \\frac{14}{4} = \\frac{21}{4}$",
+                    "Ubah ke pecahan campuran: $\\frac{21}{4} = 5\\frac{1}{4}$"
+                ]
             },
             {
                 question: "\\frac{2}{3} \\times 1\\frac{1}{2} + 2\\frac{1}{4} \\div \\frac{3}{8}",
                 options: ["7", "7\\frac{1}{3}", "8", "8\\frac{1}{3}"],
-                correct: "B",
-                solution: "7\\frac{1}{3}"
+                correct: "A",
+                solution: "7",
+                steps: [
+                    "Ubah pecahan campuran ke pecahan biasa:",
+                    "$1\\frac{1}{2} = \\frac{3}{2}$ dan $2\\frac{1}{4} = \\frac{9}{4}$",
+                    "Tulis ulang: $\\frac{2}{3} \\times \\frac{3}{2} + \\frac{9}{4} \\div \\frac{3}{8}$",
+                    "Hitung perkalian: $\\frac{2}{3} \\times \\frac{3}{2} = \\frac{6}{6} = 1$",
+                    "Hitung pembagian: $\\frac{9}{4} \\div \\frac{3}{8} = \\frac{9}{4} \\times \\frac{8}{3} = \\frac{72}{12} = 6$",
+                    "Jumlahkan: $1 + 6 = 7$",
+                    "Jawaban: $7$"
+                ]
             }
         ];
 
@@ -303,35 +375,47 @@
 
         function checkAnswer() {
             const resultDiv = document.getElementById('quiz-result');
+            const solutionDiv = document.getElementById('quiz-solution');
+            const solutionSteps = document.getElementById('solution-steps');
             const checkBtn = document.getElementById('check-btn');
             const nextBtn = document.getElementById('next-question-btn');
             const currentQuestion = questions[currentQuestionIndex];
             
             resultDiv.classList.remove('hidden');
+            solutionDiv.classList.remove('hidden');
             
             if (selectedAnswer === currentQuestion.correct) {
-                resultDiv.className = 'p-4 rounded-lg mb-4 bg-green-100 border border-green-300';
+                resultDiv.className = 'p-3 sm:p-4 rounded-lg mb-3 sm:mb-4 bg-green-100 border border-green-300';
                 resultDiv.innerHTML = `
                     <div class="flex items-center">
-                        <span class="text-2xl mr-3">✅</span>
+                        <span class="text-xl sm:text-2xl mr-3">✅</span>
                         <div>
-                            <p class="font-semibold text-green-800">Benar! Jawaban Anda tepat.</p>
-                            <p class="text-green-700">Jawaban yang benar adalah ${currentQuestion.correct}. $${currentQuestion.solution}$</p>
+                            <p class="font-semibold text-green-800 text-sm sm:text-base">Benar! Jawaban Anda tepat.</p>
+                            <p class="text-green-700 text-sm sm:text-base">Jawaban yang benar adalah ${currentQuestion.correct}. $${currentQuestion.solution}$</p>
                         </div>
                     </div>
                 `;
             } else {
-                resultDiv.className = 'p-4 rounded-lg mb-4 bg-red-100 border border-red-300';
+                resultDiv.className = 'p-3 sm:p-4 rounded-lg mb-3 sm:mb-4 bg-red-100 border border-red-300';
                 resultDiv.innerHTML = `
                     <div class="flex items-center">
-                        <span class="text-2xl mr-3">❌</span>
+                        <span class="text-xl sm:text-2xl mr-3">❌</span>
                         <div>
-                            <p class="font-semibold text-red-800">Kurang tepat. Coba lagi!</p>
-                            <p class="text-red-700">Jawaban yang benar adalah ${currentQuestion.correct}. $${currentQuestion.solution}$</p>
+                            <p class="font-semibold text-red-800 text-sm sm:text-base">Kurang tepat. Coba lagi!</p>
+                            <p class="text-red-700 text-sm sm:text-base">Jawaban yang benar adalah ${currentQuestion.correct}. $${currentQuestion.solution}$</p>
                         </div>
                     </div>
                 `;
             }
+            
+            // Show solution steps
+            solutionSteps.innerHTML = '';
+            currentQuestion.steps.forEach((step, index) => {
+                const stepDiv = document.createElement('div');
+                stepDiv.className = 'bg-white p-3 rounded border-l-4 border-blue-500 text-sm sm:text-base';
+                stepDiv.innerHTML = `<p><strong>Langkah ${index + 1}:</strong> ${step}</p>`;
+                solutionSteps.appendChild(stepDiv);
+            });
             
             checkBtn.classList.add('hidden');
             nextBtn.classList.remove('hidden');
@@ -352,6 +436,9 @@
             currentQuestionIndex = (currentQuestionIndex + 1) % questions.length;
             const question = questions[currentQuestionIndex];
             
+            // Update question number
+            document.querySelector('#quiz-container h3').textContent = `Soal Latihan ${currentQuestionIndex + 1}:`;
+            
             // Update question
             document.getElementById('quiz-question').innerHTML = `$${question.question}$ = ...`;
             
@@ -371,6 +458,7 @@
             // Reset state
             selectedAnswer = '';
             document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('quiz-solution').classList.add('hidden');
             document.getElementById('check-btn').classList.remove('hidden');
             document.getElementById('check-btn').disabled = true;
             document.getElementById('next-question-btn').classList.add('hidden');
@@ -404,5 +492,5 @@
             }
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'976bf95d120ef930',t:'MTc1NjQ2OTcyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'976c506d3270fdc5',t:'MTc1NjQ3MzI5NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
